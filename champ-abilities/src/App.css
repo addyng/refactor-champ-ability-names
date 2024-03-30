@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Header/Tabs */
+
+.headerRoot {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.tabs{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(168, 168, 208);
+  height: 2rem;
+}
+
+.tabs li {
+  display: flex;
+  list-style-type: none;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 100%;
+}
+
+.tabs li:hover {
+  background-color: rgb(144, 144, 184);
+}
+
+.tabs li.active {
+  background-color: rgb(125, 125, 225);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(168, 168, 208);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+}
+
+/* ManualList */
+.manualListRoot {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.manualListRoot .inputList {
+  background-color: rgb(150, 150, 219);
+  text-align: center;
+  outline: none;
+  border: none;
+  height: 5%;
+}
+
+.manualListRoot .inputList::placeholder {
+  color: black;
+}
+
+.manualListRoot .championsDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.manualListRoot .singleChampSpell {
+  max-width: 20vw;
+}
+
+.manualListRoot .singleChampImage {
+  height: auto;
+  width: 20vw;
+}
